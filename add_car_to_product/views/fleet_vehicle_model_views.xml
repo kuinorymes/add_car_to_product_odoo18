@@ -1,0 +1,63 @@
+<odoo>
+  <record id="view_fleet_vehicle_model_form_inherit_car_fields" model="ir.ui.view">
+    <field name="name">fleet.vehicle.model.form.inherit.car.fields</field>
+    <field name="model">fleet.vehicle.model</field>
+    <field name="inherit_id" ref="fleet.fleet_vehicle_model_view_form"/>
+    <field name="arch" type="xml">
+
+      <xpath expr="//div[@class='oe_title']" position="replace">
+        <div class="oe_title">
+          <label for="brand_id"/>
+          <h1>
+            <field name="brand_id" placeholder="e.g. AUDI"/>
+          </h1>
+          <label for="name"/>
+          <h2>
+            <field name="name" placeholder="e.g. A3"/>
+          </h2>
+        </div>
+      </xpath>
+
+      <xpath expr="//field[@name='transmission']" position="replace"/>
+      <xpath expr="//field[@name='default_fuel_type']" position="after">
+        <field name="transmission"/>
+      </xpath>
+
+      <xpath expr="//sheet/group" position="before">
+        <group string="Model Details">
+          <group>
+            <field name="model_type" class="text-primary fw-bold"/>
+            <field name="years_of_release" readonly="1" class="text-primary fw-bold"/>
+            <field name="model_year_from"/>
+            <field name="model_year_to"/>
+          </group>
+        </group>
+      </xpath>
+      <xpath expr="//group[@name='group_engine']/field[@name='default_fuel_type']" position="before">
+        <field name="volume"/>
+      </xpath>
+      <xpath expr="//page[@name='information']/group/group[1]" position="inside">
+        <field name="ovoko_car_id"/>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="fleet_vehicle_model_list_custom" model="ir.ui.view">
+    <field name="name">fleet.vehicle.model.list.custom</field>
+    <field name="model">fleet.vehicle.model</field>
+    <field name="type">list</field>
+    <field name="arch" type="xml">
+      <list string="Models">
+        <field name="brand_id" string="Manufacturer" width="120"/>
+        <field name="name" string="Model name" width="120"/>
+        <field name="model_type" string="Model type" width="90"/>
+        <field name="model_year_from" string="Year from" width="100" widget="char"/>
+        <field name="model_year_to" string="Year to" width="100" widget="char"/>
+        <field name="volume" width="90"/>
+        <field name="default_fuel_type" string="Fuel Type" width="100"/>
+        <field name="transmission" width="120"/>
+      </list>
+    </field>
+  </record>
+
+</odoo>
