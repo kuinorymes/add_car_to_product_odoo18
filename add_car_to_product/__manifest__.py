@@ -5,6 +5,8 @@
     "description": "Allows to add car to product",
     "category": "Custom",
     "depends": ["base", "fleet", "product"],
+    "price": 10.0,
+    "currency": "EUR",
     "data": [
         "security/ir.model.access.csv",
         "security/security.xml",
