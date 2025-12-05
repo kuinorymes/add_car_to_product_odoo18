@@ -1,10 +1,12 @@
 {
     "name": "Add Car To Product",
-    "version": "1.0.0",
+    "version": "17.1.0.0",
     "summary": "Add car to product",
     "description": "Allows to add car to product",
     "category": "Custom",
     "depends": ["base", "fleet", "product"],
+    "price": 15.0,
+    "currency": "EUR",
     "data": [
         "security/ir.model.access.csv",
         "security/security.xml",
