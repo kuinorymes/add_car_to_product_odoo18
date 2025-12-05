@@ -6,6 +6,8 @@
     "category": "Custom",
     "depends": ["base", "fleet", "product"],
     "license": "LGPL-3",
+    "price": 20.0,
+    "currency": "EUR",
     "data": [
         "security/ir.model.access.csv",
         "security/security.xml",
