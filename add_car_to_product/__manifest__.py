@@ -1,6 +1,6 @@
 {
     "name": "Add Car To Product",
-    "version": "1.0.0",
+    "version": "18.1.0.0",
     "summary": "Add car to product",
     "description": "Allows to add car to product",
     "category": "Custom",
