@@ -7,6 +7,7 @@
     "depends": ["base", "fleet", "product"],
     "price": 15.0,
     "currency": "EUR",
+    "license": "LGPL-3",
     "data": [
         "security/ir.model.access.csv",
         "security/security.xml",
