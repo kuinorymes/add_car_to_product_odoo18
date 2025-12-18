@@ -6,6 +6,7 @@
     "category": "Custom",
     "depends": ["base", "fleet", "product"],
     "license": "LGPL-3",
+    "author": "Netframe, Arsen Myroniuk",
     "data": [
         "security/ir.model.access.csv",
         "security/security.xml",
