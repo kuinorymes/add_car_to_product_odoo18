@@ -7,6 +7,7 @@
     "depends": ["base", "fleet", "product"],
     "license": "LGPL-3",
     "author": "Netframe, Arsen Myroniuk",
+    "maintainer": "Arsen Myroniuk",
     "data": [
         "security/ir.model.access.csv",
         "security/security.xml",
